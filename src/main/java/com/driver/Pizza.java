@@ -64,7 +64,7 @@ public class Pizza {
             bill += "Paperbag Added: " + paperBag + "\n";
         }
         int amount = price + cheese + toppings + paperBag;
-        bill += "Total Price: " + amount + "\n";
+        bill += "Total Price: " + amount;
         return this.bill;
     }
 }
