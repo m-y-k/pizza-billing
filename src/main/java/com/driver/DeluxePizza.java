@@ -8,13 +8,13 @@ public class DeluxePizza extends Pizza {
 
         // your code goes here
 
-        // add cheese
-        addExtraCheese();
-
-        // add toppings
-        addExtraToppings();
-
-        // add bag
-        addTakeaway();
+//        // add cheese
+//        addExtraCheese();
+//
+//        // add toppings
+//        addExtraToppings();
+//
+//        // add bag
+//        addTakeaway();
     }
 }
