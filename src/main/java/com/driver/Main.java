@@ -4,7 +4,7 @@ public class Main {
   public static void main(String[] args) {
 
     DeluxePizza dp = new DeluxePizza(false);
-    System.out.println(dp.getPrice());
+    System.out.println(dp.getBasePrice());
     /* Example 2:
         Base Price Of The Pizza: 400
         Extra Cheese Added: 80
