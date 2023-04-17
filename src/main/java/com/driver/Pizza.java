@@ -3,21 +3,35 @@ package com.driver;
 public class Pizza {
 
     private int price;
-    private Boolean isVeg;
     private String bill;
     private int cheese;
     private int toppings;
     private int paperBag;
 
+    private boolean isCheeseAdded;
+
+    private boolean isToppingsAdded;
+
+    private boolean isPaperBagAdded;
+
     public Pizza(Boolean isVeg){
-        this.isVeg = isVeg;
+
         // your code goes here
         if (isVeg) {
             price = 300;
+            toppings = 70;
         }
         else {
             price = 400;
+            toppings = 120;
         }
+
+        cheese = 80;
+
+        paperBag = 20;
+
+        bill = "Base Price Of The Pizza: " + price + "\n";
+
     }
 
     public int getPrice(){
@@ -26,21 +40,26 @@ public class Pizza {
 
     public void addExtraCheese(){
         // your code goes here
-        cheese = 80;
+        if (isCheeseAdded == false) {
+            price += cheese;
+            isCheeseAdded = true;
+        }
     }
 
     public void addExtraToppings(){
         // your code goes here
-        if (isVeg) {
-            toppings = 70;
-        }else {
-            toppings = 120;
+        if (isToppingsAdded == false) {
+            price += toppings;
+            isToppingsAdded = true;
         }
     }
 
     public void addTakeaway(){
         // your code goes here
-        paperBag = 20;
+        if (isPaperBagAdded == false) {
+            price += paperBag;
+            isPaperBagAdded = true;
+        }
     }
 
     public String getBill(){
@@ -53,18 +72,18 @@ public class Pizza {
             Total Price: 470 */
         // price cheese toppings paperbag
 
-        bill = "Base Price Of The Pizza: " + price + "\n";
-        if (cheese != 0) {
+        if (isCheeseAdded) {
             bill += "Extra Cheese Added: " + cheese + "\n";
         }
-        if (toppings != 0) {
+        if (isToppingsAdded) {
             bill += "Extra Toppings Added: " + toppings + "\n";
         }
-        if (paperBag != 0) {
+        if (isPaperBagAdded) {
             bill += "Paperbag Added: " + paperBag + "\n";
         }
-        int amount = price + cheese + toppings + paperBag;
-        bill += "Total Price: " + amount;
+
+        bill += "Total Price: " + price + "\n";
+
         return this.bill;
     }
 }
