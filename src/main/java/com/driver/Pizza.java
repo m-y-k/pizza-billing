@@ -6,6 +6,71 @@ public class Pizza {
 
     private int totalPrice;
     private String bill;
+
+    public void setBasePrice(int basePrice) {
+        this.basePrice = basePrice;
+    }
+
+    public int getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(int totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    public void setBill(String bill) {
+        this.bill = bill;
+    }
+
+    public int getCheese() {
+        return cheese;
+    }
+
+    public void setCheese(int cheese) {
+        this.cheese = cheese;
+    }
+
+    public int getToppings() {
+        return toppings;
+    }
+
+    public void setToppings(int toppings) {
+        this.toppings = toppings;
+    }
+
+    public int getPaperBag() {
+        return paperBag;
+    }
+
+    public void setPaperBag(int paperBag) {
+        this.paperBag = paperBag;
+    }
+
+    public boolean isCheeseAdded() {
+        return isCheeseAdded;
+    }
+
+    public void setCheeseAdded(boolean cheeseAdded) {
+        isCheeseAdded = cheeseAdded;
+    }
+
+    public boolean isToppingsAdded() {
+        return isToppingsAdded;
+    }
+
+    public void setToppingsAdded(boolean toppingsAdded) {
+        isToppingsAdded = toppingsAdded;
+    }
+
+    public boolean isPaperBagAdded() {
+        return isPaperBagAdded;
+    }
+
+    public void setPaperBagAdded(boolean paperBagAdded) {
+        isPaperBagAdded = paperBagAdded;
+    }
+
     private int cheese;
     private int toppings;
     private int paperBag;
