@@ -10,10 +10,10 @@ public class Main {
         Extra Cheese Added: 80
         Extra Toppings Added: 120
         Total Price: 600 */
-//    dp.addTakeaway();
+    dp.addTakeaway();
     dp.addExtraCheese();
     dp.addExtraToppings();
-//    dp.addTakeaway();
+    dp.addTakeaway();
     System.out.println(dp.getBill());
 
     Pizza p = new Pizza(true);

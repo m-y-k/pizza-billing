@@ -11,11 +11,11 @@ public class Pizza {
         this.basePrice = basePrice;
     }
 
-    public int getTotalPrice() {
+    public int getPrice() {
         return totalPrice;
     }
 
-    public void setTotalPrice(int totalPrice) {
+    public void setPrice(int totalPrice) {
         this.totalPrice = totalPrice;
     }
 
